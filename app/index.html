@@ -1,0 +1,102 @@
+<!doctype html> 
+
+<html>
+<head>
+    <!--Tab text-->
+    <title>boilerAssist</title>
+    
+    <!--Dependencies-->   
+    <link href="dependencies/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/styleIndex.css" rel="stylesheet">
+
+    <!--Add background image here if needed-->
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!--Dependencies-->
+    <script src="dependencies/jquery-3.2.1.min.js"></script>
+    <script src="dependencies/bootstrap.min.js"></script>
+    <script src="resources/scriptIndex.js"></script>
+
+    <!--Add code for webpage here-->   
+    <!--Title row-->
+    <div class="row" id="titleRow">
+        <h1 id="title" align="center">boilerAssist</h1>
+    </div>
+
+    <!--Button row-->
+    <div class="row" id="buttonRow">
+        <div class="tabs">
+            <ul class="tab-links" style="padding:0%">
+                <li class="active"><a href="#tab1">Home</a></li>
+                <li><a href="#tab2">Login</a></li>
+                <li><a href="#tab3">Register</a></li>
+                <li><a href="#tab4">Github</a></li>
+            </ul>
+         
+            <div class="tab-content">
+                <!--Home Tab-->
+                <div id="tab1" class="tab active">
+                    <p class="paragraph">boilerAssist provides a chat system for different schools of Purdue as well as department contact information for current students and possible future students.</p>
+                </div>
+         
+                <!--Login Tab-->
+                <div id="tab2" class="tab">
+                    <div class="row">
+                        <!--Login in as guest-->
+                        <div class="column" id="loginGuest">
+                            <h1 style="font-size:2.5vw">Login As Guest</h1>
+                            <div style="height:3vh;"> </div>                        
+                            
+                            <label style="color: #ffffff; font-size:1.5vw" for="loginGuestName">Display Name</label>
+                            <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginGuestName" placeholder="Please enter a display name">
+                        
+                            <div style="height:4vh;"> </div>                        
+                            <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginGuestButton" class="btn">Sign In</button>
+                        </div>
+
+                        <!--Login in as student-->
+                        <div class="column" id="loginStudent">
+                                <h1 style="font-size:2.5vw">Login As Student</h1>
+                                <div style="height:3vh;"> </div>                        
+                                
+                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentEmail">Email</label>
+                                <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentEmail" placeholder="Please enter your email">
+
+                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentPassword">Password</label>
+                                <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentPassword" placeholder="Please enter your password">
+                            
+                                <div style="height:4vh;"> </div>                        
+                                <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn">Log In</button>
+                        </div>
+                    </div>
+                </div>
+         
+                <!--Register Tab-->
+                <div id="tab3" class="tab">
+                        <h1 style="font-size:2.5vw">Register An Account</h1>
+                        <div style="height:3vh;"> </div>                        
+                        
+                        <label style="color: #ffffff; font-size:1.5vw" for="registerStudentEmail">Email</label>
+                        <input class="form-control"style="border:1px solid #000000; width:30vw; height:5vh" maxlength="32" id="registerStudentEmail" placeholder="Please enter a Purude email">
+
+                        <label style="color: #ffffff; font-size:1.5vw" for="registerStudentPassword">Password</label>
+                        <input class="form-control"style="border:1px solid #000000; width:30vw; height:5vh" maxlength="32" id="registerStudentPassword" placeholder="Please enter your password">
+                    
+                        <div style="height:4vh;"> </div>                        
+                        <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="registerStudentButton" class="btn">Register</button>
+                </div>
+         
+                <!--Github Tab-->
+                <div id="tab4" class="tab">
+                    <p class="paragraph">Contributors: Craig Ruble, Brett Eiffert, Vikram Pasumarti</p>
+                    <p class="paragraph">This project is considered Open Source with a BSD like license.</p>
+                    <p class="paragraph">Our project can be found <a href="https://github.com/Ruble46/boilerAssist" target="_blank">here</a> </p> 
+                </div>
+            </div> <!--end of tab-content-->
+        </div> <!--end of tabs-->
+    </div> <!--end of buttonRow-->
+</body>
