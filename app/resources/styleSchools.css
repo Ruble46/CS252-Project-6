@@ -1,0 +1,266 @@
+.row {
+    width:101vw;
+}
+/*------------------------------AGRICULTURE------------------------------*/
+#agricultureTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#agricultureTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#agricultureContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------EDUCATION------------------------------*/
+#educationTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#educationTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#educationContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------ENGINEERING------------------------------*/
+#engineeringTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#engineeringTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#engineeringContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------EXPLORATORY------------------------------*/
+#exploratoryTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#exploratoryTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#exploratoryContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------HEALTH AND HUMAN------------------------------*/
+#healthTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#healthTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:5vw;    
+    font-family: Georgia, serif;
+}
+
+#healthContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------LIBERAL ARTS------------------------------*/
+#liberalTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#liberalTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#liberalContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------MANAGEMENT------------------------------*/
+#managementTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#managementTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:6vw;    
+    font-family: Georgia, serif;
+}
+
+#managementContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------PHARMACY------------------------------*/
+#pharmacyTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#pharmacyTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#pharmacyContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------POLYTECHNIC------------------------------*/
+#polytechnicTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#polytechnicTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#polytechnicContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------SCIENCE------------------------------*/
+#scienceTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#scienceTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:8vw;    
+    font-family: Georgia, serif;
+}
+
+#scienceContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
+
+/*------------------------------VETERINARY MEDICINE------------------------------*/
+#veterinaryTitleRow {
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(152, 112, 13);
+    border:solid;
+    border-color:rgb(255, 255, 255);
+}
+
+#veterinaryTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    font-size:7vw;    
+    font-family: Georgia, serif;
+}
+
+#veterinaryContentRow {
+    background-color:rgb(194,142,14);
+    height:80vh;
+}
