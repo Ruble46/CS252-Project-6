@@ -7,6 +7,8 @@
     height: 30vh;
     background-color: black; 
     color: rgb(152, 112, 13);
+    border-bottom:solid;
+    border-bottom-color:white;
 }
 
 #buttonRow {
@@ -14,6 +16,7 @@
     background-color: rgb(194,142,14);
     padding-left: 5%;
 }
+
 #title {
     display:flex;
     align-items: center;
@@ -140,10 +143,10 @@ textarea:focus, input:focus {
 }
  
 li.active a, li.active a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     opacity: 1;
     font-size: 4vw;
-    border-bottom:3px solid rgb(0, 0, 0);
+    border-bottom:3px solid rgb(255, 255, 255);
 }
  
 /*----- Content of Tabs -----*/
