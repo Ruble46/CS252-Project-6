@@ -19,7 +19,7 @@
 .tab-links a {
     display:block;
     height:100%;
-    font-size:2vw;
+    font-size:1.45vw;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 /*Active tab*/
 li.active a, li.active a:hover {
     color: rgb(255, 255, 255);
-    font-size: 2vw;
+    font-size: 1.45vw;
     text-align: center;
     vertical-align: middle;
     border:solid rgb(255, 255, 255);
@@ -49,7 +49,7 @@ li.active a, li.active a:hover {
 
 .take-all-space {
     width:100%;
-    height:25.75vh;
+    height:10vh;
 }
 
 /*----- Content of Tabs -----*/
