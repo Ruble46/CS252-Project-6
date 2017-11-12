@@ -1,9 +1,11 @@
 #titleRow {
     height: 30vh;
-    background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
+    color: rgb(0, 0, 0);
     border:solid;
     border-color:rgb(255, 255, 255);
+    background: url("../resources/2048.jpg");
+    background-position: 0% 40%;
+    background-size:100%;
 }
 
 #buttonTable1 {
@@ -34,6 +36,7 @@
     border-color:rgb(0, 0, 0);
     font-family: Georgia, serif;
     font-size:4vh;
+    border-color:rgb(255, 255, 255);
 }
 
 .row {
