@@ -37,7 +37,7 @@
 
 #loginStudent {
     width:50%;
-    padding-left:13vw;
+    padding-left:15vw;
     border-left: solid;
     border-left-color: black;
 }
@@ -124,7 +124,7 @@ textarea:focus, input:focus {
     margin:1vw 1vw;
     float:left;
     list-style:none;
-    padding-left:7vw;
+    padding-left:6vw;
 }
  
 .tab-links a {
@@ -154,9 +154,9 @@ li.active a, li.active a:hover {
  
 /*----- Content of Tabs -----*/
 .tab-content {
-        padding:15px;
+        padding:1px;
         border-radius:3px;
-        width:85%;
+        width:90%;
 }
  
 .tab {
