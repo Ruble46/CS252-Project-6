@@ -1,6 +1,70 @@
 .row {
     width:101vw;
 }
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+ 
+.tab-links li {
+    float:left;
+    list-style:none;
+}
+ 
+/*Non active tabs*/
+.tab-links a {
+    display:block;
+    height:100%;
+    font-size:2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    transition:all linear 0.15s;
+    border:solid rgb(255, 255, 255);
+    font-family:Georgia, serif;
+    width:100%;
+}
+ 
+/*Active tab*/
+li.active a, li.active a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    text-align: center;
+    vertical-align: middle;
+    border:solid rgb(255, 255, 255);
+    background-color:rgb(194,142,14);    
+    border-right:transparent;
+    border-top:transparent;
+}
+ 
+.tab-links a:hover {
+    text-decoration:none;
+}
+
+.take-all-space {
+    width:100%;
+    height:25.75vh;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+       
+}
+ 
+.tab {
+    display:none;
+}
+ 
+.tab.active {
+    display:block;
+}
+
 /*------------------------------AGRICULTURE------------------------------*/
 #agricultureTitleRow {
     height: 20vh;
@@ -23,6 +87,11 @@
 #agricultureContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .agriculture a {
+    background-color:#6B4536;
 }
 
 /*------------------------------EDUCATION------------------------------*/
@@ -49,6 +118,11 @@
     height:80vh;
 }
 
+/*Non active tabs*/
+.tab-links, .education a {
+    background-color:#085C11;
+}
+
 /*------------------------------ENGINEERING------------------------------*/
 #engineeringTitleRow {
     height: 20vh;
@@ -71,6 +145,11 @@
 #engineeringContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .engineering a {
+    background-color:rgb(241, 193, 0);
 }
 
 /*------------------------------EXPLORATORY------------------------------*/
@@ -97,6 +176,11 @@
     height:80vh;
 }
 
+/*Non active tabs*/
+.tab-links, .exploratory a {
+    background-color:#BAA892;
+}
+
 /*------------------------------HEALTH AND HUMAN------------------------------*/
 #healthTitleRow {
     height: 20vh;
@@ -119,6 +203,11 @@
 #healthContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .health a {
+    background-color:#29A592;
 }
 
 /*------------------------------LIBERAL ARTS------------------------------*/
@@ -145,6 +234,11 @@
     height:80vh;
 }
 
+/*Non active tabs*/
+.tab-links, .liberal a {
+    background-color:#849E2A;
+}
+
 /*------------------------------MANAGEMENT------------------------------*/
 #managementTitleRow {
     height: 20vh;
@@ -167,6 +261,11 @@
 #managementContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .management a {
+    background-color:#6E99B4;
 }
 
 /*------------------------------PHARMACY------------------------------*/
@@ -193,6 +292,11 @@
     height:80vh;
 }
 
+/*Non active tabs*/
+.tab-links, .pharmacy a {
+    background-color:#A3D6D7;
+}
+
 /*------------------------------POLYTECHNIC------------------------------*/
 #polytechnicTitleRow {
     height: 20vh;
@@ -215,6 +319,11 @@
 #polytechnicContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .polytechnic a {
+    background-color:#B46012;
 }
 
 /*------------------------------SCIENCE------------------------------*/
@@ -241,6 +350,11 @@
     height:80vh;
 }
 
+/*Non active tabs*/
+.tab-links, .science a {
+    background-color:#FF9B1A;
+}
+
 /*------------------------------VETERINARY MEDICINE------------------------------*/
 #veterinaryTitleRow {
     height: 20vh;
@@ -263,4 +377,9 @@
 #veterinaryContentRow {
     background-color:rgb(194,142,14);
     height:80vh;
+}
+
+/*Non active tabs*/
+.tab-links, .veterinary a {
+    background-color:#AD1F65;
 }
