@@ -144,9 +144,10 @@ li.active a, li.active a:hover {
 #educationTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/education.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #educationTitle {
@@ -155,7 +156,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -173,9 +174,10 @@ li.active a, li.active a:hover {
 #engineeringTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/engineering.jpg");    
+    background-position: 50% 50%;
+    background-size:100%;
 }
 
 #engineeringTitle {
@@ -184,7 +186,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -202,9 +204,10 @@ li.active a, li.active a:hover {
 #exploratoryTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/exploratory.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #exploratoryTitle {
@@ -213,7 +216,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -231,9 +234,10 @@ li.active a, li.active a:hover {
 #healthTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/health.jpg");    
+    background-position: 50% 80%;
+    background-size:100%;
 }
 
 #healthTitle {
@@ -242,7 +246,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:5vw;    
+    font-size:6vw;    
     font-family: Georgia, serif;
 }
 
@@ -260,9 +264,10 @@ li.active a, li.active a:hover {
 #liberalTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/liberal.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #liberalTitle {
@@ -271,7 +276,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -289,9 +294,10 @@ li.active a, li.active a:hover {
 #managementTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/management.jpg");    
+    background-position: 50% 40%;
+    background-size:100%;
 }
 
 #managementTitle {
@@ -318,9 +324,10 @@ li.active a, li.active a:hover {
 #pharmacyTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/pharmacy.png");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #pharmacyTitle {
@@ -329,7 +336,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -347,9 +354,10 @@ li.active a, li.active a:hover {
 #polytechnicTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/polytechnic.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #polytechnicTitle {
@@ -358,7 +366,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -376,9 +384,10 @@ li.active a, li.active a:hover {
 #scienceTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/science.jpg");    
+    background-position: 50% 80%;
+    background-size:100%;
 }
 
 #scienceTitle {
@@ -405,9 +414,10 @@ li.active a, li.active a:hover {
 #veterinaryTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/veterinary.jpg");    
+    background-position: 50% 40%;
+    background-size:100%;
 }
 
 #veterinaryTitle {
