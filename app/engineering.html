@@ -29,13 +29,13 @@
         
     <div class="row" id="engineeringContentRow">
         <!--Pills column-->
-        <div class="col-2">
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
             <div class="tabs">
                 <ul class="tab-links" style="padding:0%">
                     <li class="active take-all-space engineering"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space engineering"><a href="#tab2">All Associated Majors</a></li>
                     <li class="take-all-space engineering"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(0, 0, 0);"><-Back</a>
+                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
                 </ul>
             </div>
         </div>
@@ -44,15 +44,20 @@
         <div class="col-10">
             <div class="tabs">
                 <div class="tab-content">
+                    <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <h1>Tab 1 Content</h1>
-                    </div>
+                        <div disabled class="chatBox" id="chatBox_agriculture"></div>
                         
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_agriculture" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_agriculture">Send</button>
+                    </div>
+                    
                     <!--Login Tab-->
                     <div id="tab2" class="tab">
                         <h1>Tab 2 Content</h1>
                     </div>
-                        
+                    
                     <!--Register Tab-->
                     <div id="tab3" class="tab">
                         <h1>Tab 3 Content</h1>

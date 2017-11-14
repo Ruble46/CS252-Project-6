@@ -2,6 +2,10 @@
     width:101vw;
 }
 
+.col-2 {
+    background: url("../resources/stripes.jpg");    
+}
+
 /*----- Tab Links -----*/
 /* Clearfix */
 .tab-links:after {
@@ -19,28 +23,28 @@
 .tab-links a {
     display:block;
     height:100%;
-    font-size:1.45vw;
+    font-size:1.2vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
     transition:all linear 0.15s;
-    border:1px solid rgb(255, 255, 255);
+    border-top:1.5px solid rgb(255, 255, 255);
+    border-bottom:1.5px solid rgb(255, 255, 255);    
     font-family:Georgia, serif;
     width:100%;
 }
  
 /*Active tab*/
 li.active a, li.active a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(194,142,14);
     font-size: 1.45vw;
     text-align: center;
     vertical-align: middle;
-    border:solid rgb(255, 255, 255);
-    background-color:rgb(194,142,14);    
-    border-right:transparent;
-    border-top:transparent;
+    background-color:rgb(255, 255, 255);
+    border-top:2px solid rgb(0, 0, 0);   
+    border-bottom:2px solid rgb(0, 0, 0);   
 }
  
 .tab-links a:hover {
@@ -69,9 +73,12 @@ li.active a, li.active a:hover {
 #agricultureTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom:solid;
+    border-bottom-color:rgb(0, 0, 0);
+    background: url("../resources/agriculture.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #agricultureTitle {
@@ -80,7 +87,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -91,7 +98,46 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .agriculture a {
-    background-color:#6B4536;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_agriculture {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:85%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow:auto;
+    font-family: Georgia, serif;
+}
+
+#messageBox_agriculture {
+    width: 74%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_agriculture {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------EDUCATION------------------------------*/
@@ -120,7 +166,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .education a {
-    background-color:#085C11;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------ENGINEERING------------------------------*/
@@ -149,7 +195,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .engineering a {
-    background-color:rgb(241, 193, 0);
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------EXPLORATORY------------------------------*/
@@ -178,7 +224,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .exploratory a {
-    background-color:#BAA892;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------HEALTH AND HUMAN------------------------------*/
@@ -207,7 +253,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .health a {
-    background-color:#29A592;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------LIBERAL ARTS------------------------------*/
@@ -236,7 +282,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .liberal a {
-    background-color:#849E2A;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------MANAGEMENT------------------------------*/
@@ -265,7 +311,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .management a {
-    background-color:#6E99B4;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------PHARMACY------------------------------*/
@@ -294,7 +340,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .pharmacy a {
-    background-color:#A3D6D7;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------POLYTECHNIC------------------------------*/
@@ -323,7 +369,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .polytechnic a {
-    background-color:#B46012;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------SCIENCE------------------------------*/
@@ -352,7 +398,7 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .science a {
-    background-color:#FF9B1A;
+    background-color:rgb(59, 59, 59);
 }
 
 /*------------------------------VETERINARY MEDICINE------------------------------*/
@@ -381,5 +427,5 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .veterinary a {
-    background-color:#AD1F65;
+    background-color:rgb(59, 59, 59);
 }
