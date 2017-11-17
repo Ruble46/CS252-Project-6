@@ -42,6 +42,12 @@
     width:101vw;
 }
 
+#logoutButton {
+    background-color:rgb(134, 98, 13);
+    color:rgb(255, 255, 255);
+    font-size:3.6h;
+}
+
 #agricultureButton:hover {
     background-color:rgb(255, 255, 255);
     color:rgb(194,142,14);
