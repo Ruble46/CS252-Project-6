@@ -58,7 +58,7 @@ li.active a, li.active a:hover {
 
 /*----- Content of Tabs -----*/
 .tab-content {
-       
+       margin:0px;
 }
  
 .tab {
@@ -67,6 +67,68 @@ li.active a, li.active a:hover {
  
 .tab.active {
     display:block;
+}
+
+.insightParagraph {
+    text-indent:3vw; 
+    font-family: Georgia, serif; 
+    padding-left:2.5vw; 
+    padding-right:1.5vw;
+    font-size:1.25vw;
+    color:rgb(255, 255, 255);
+}
+#title_insight {
+    background-image: url("../resources/stripes.jpg"); 
+    background-size:25%;
+    color:rgb(194,142,14);
+    text-align: center;
+    justify-content: center;
+    height:7vh;
+    width:100%;
+    border-right:0.25vw solid rgb(0, 0, 0);
+    border-bottom:0.25vw solid rgb(0, 0, 0);
+    font-size:2.5vw;
+}
+
+#title_majors {
+    background-image: url("../resources/stripes.jpg"); 
+    background-size:25%;
+    color:rgb(194,142,14);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    height:7vh;
+    width:100%;
+    font-size:2.5vw;
+}
+
+.hyperlink {
+    width:100%;
+    display:block;
+    color:white;
+    text-decoration:underline;
+    font-family: Georgia, serif; 
+    padding-left: 2vw ;
+    text-indent: -2vw ;
+}
+
+.hyperlink:hover{
+    color:black;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color:rgb(49, 49, 49);
 }
 
 /*------------------------------AGRICULTURE------------------------------*/
@@ -113,7 +175,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -182,7 +246,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -251,7 +317,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -320,7 +388,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -389,7 +459,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -458,7 +530,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -527,7 +601,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -596,7 +672,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -665,7 +743,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -734,7 +814,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
@@ -803,7 +885,9 @@ li.active a, li.active a:hover {
     border:0.45vh solid rgb(0, 0, 0); 
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
-    overflow:auto;
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
     font-family: Georgia, serif;
 }
 
