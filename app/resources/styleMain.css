@@ -33,60 +33,101 @@
     height:100%;
     color:rgb(255, 255, 255);
     background-color:rgb(194,142,14);
-    border-color:rgb(0, 0, 0);
     font-family: Georgia, serif;
-    font-size:4vh;
-    border-color:rgb(255, 255, 255);
+    font-size:3.6vh;
+    border:0.25vh solid rgb(255, 255, 255);
 }
 
 .row {
     width:101vw;
 }
 
+#logoutButton {
+    background-color:rgb(134, 98, 13);
+    color:rgb(255, 255, 255);
+    font-size:3.6h;
+}
+
 #agricultureButton:hover {
-    background-color:#6B4536;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #educationButton:hover {
-    background-color:#085C11;    
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #engineeringButton:hover {
-    background-color:rgb(241, 193, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #exploratoryButton:hover {
-    background-color:#BAA892;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #healthButton:hover {
-    background-color:#29A592;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #liberalButton:hover {
-    background-color:#849E2A;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #managementButton:hover {
-    background-color:#6E99B4;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #pharmacyButton:hover {
-    background-color:#A3D6D7;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #polytechnicButton:hover {
-    background-color:#B46012;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #scienceButton:hover {
-    background-color:#FF9B1A;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #veterinaryButton:hover {
-    background-color:#AD1F65;
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }
 
 #logoutButton:hover {
-    background-color:rgb(212,14,0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
+    border:0.5vh solid rgb(65, 65, 65);
+    font-size:4vh;
 }

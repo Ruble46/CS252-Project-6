@@ -24,35 +24,76 @@
 
     <!--Add code for webpage here-->
     <div class="row" id="healthTitleRow">
-        <h1 id="healthTitle" align="center">College of Health and Human Sciences</h1>
+        <div class="card" style="width:100%; height:20vh; background-color: rgba(255, 255, 255, 0.37); border-bottom:0.5vh solid black"> 
+            <div id="healthTitle" align="center">College of Health & Human Sciences</div>            
+        </div>
     </div>
         
     <div class="row" id="healthContentRow">
         <!--Pills column-->
-        <div class="col-2">
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
             <div class="tabs">
                 <ul class="tab-links" style="padding:0%">
                     <li class="active take-all-space health"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space health"><a href="#tab2">All Associated Majors</a></li>
                     <li class="take-all-space health"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(0, 0, 0);"><-Back</a>
+                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
                 </ul>
             </div>
         </div>
     
         <!--Content column-->
-        <div class="col-10">
+        <div class="col-10" style="padding:0px">
             <div class="tabs">
                 <div class="tab-content">
+                    <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <h1>Tab 1 Content</h1>
-                    </div>
+                        <div disabled class="chatBox" id="chatBox_health"></div>
                         
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_health" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_health">Send</button>
+                    </div>
+                    
                     <!--Login Tab-->
                     <div id="tab2" class="tab">
-                        <h1>Tab 2 Content</h1>
+                        <div class="column" style="width:50%; height:80vh; float:left; border-right:0.15vw solid black">
+                            <h2 id="title_insight">Insight</h2>
+                            <p class="insightParagraph">Big opportunities thrive in the College of Health and Human Sciences. Curb childhood obesity. Protect the environment. Reform health care. Choose from nine academic units with one extraordinary focus — to improve health and quality of life.</p>
+                            <p class="insightParagraph">Our faculty are trailblazers who lead our world-class programs, research centers and healthcare facilities. Plus, there are heaps of opportunities to take part in internships, study abroad and more than 40 student organizations for health and human sciences undergrads. And if you’re thinking about a future as a doctor, physician assistant, physical therapist, occupational therapist, chiropractor, dentist or lawyer, the College of Health and Human Sciences is a perfect fit to prepare you for professional school.</p>
+                        </div>
+                        <div class="column" style="width:50%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <h2 id="title_majors">Majors</h2>
+                            <div class="scrollBar" style="overflow-y:scroll; height:70vh; margin-left:1vw; font-size:1.25vw">
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/athletic-training.php" target="#">>Athletic Training</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/brain-and-behavioral-sciences.php" target="#">>Brain and Behavioral Sciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/early-childhood-education-and-exceptional-needs.php" target="#">>Early Childhood Education and Exceptional Needs</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/environmental-health-sciences.php" target="#">>Environmental Health Sciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/family-and-consumer-sciences-education.php" target="#">>Family and Consumer Sciences Education</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/financial-counseling-and-planning.php" target="#">>Financial Counseling and Planning</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/foods-and-nutrition-in-business.php" target="#">>Foods and Nutrition In Business</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/health-sciences-preprofessional.php" target="#">>Health Sciences-Preprofessional</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/hospitality-and-tourism-management.php" target="#">>Hospitality and Tourism Management</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/human-services.php" target="#">>Human Services</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/kinesiology.php" target="#">>Kinesiology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/medical-laboratory-sciences.php" target="#">>Medical Labroratory Sciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nursing.php" target="#">>Nursing</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nutrition-and-dietetics.php" target="#">>Nutrition and Dietetics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nutrition-and-dietetics-nutrition-fitness-health.php" target="#">>Nutrition and Dietetics/Nutrition, Fitness, and Health</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nutrition-fitness-and-health.php" target="#">>Nutrition, Fitness, and Health</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nutrition-science.php" target="#">>Nutrition Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/occupational-health-sciences.php" target="#">>Occupational Health Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/psychological-sciences.php" target="#">>Psychological Sciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/public-health.php" target="#">>Public Health</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/radiological-health-sciences.php" target="#">>Radiological Health Sciences-Health Physics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/radiological-health-sciences-premed.php" target="#">>Radiological Health Sciences-Pre-Medical Physics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/retail-management.php" target="#">>Retail Management</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/selling-and-sales-management.php" target="#">>Selling and Sales Management</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/speech-language-and-hearing-sciences.php" target="#">>Speech, Language, and Hearing Sciences</a>
+                            </div>
+                        </div>
                     </div>
-                        
+                    
                     <!--Register Tab-->
                     <div id="tab3" class="tab">
                         <h1>Tab 3 Content</h1>

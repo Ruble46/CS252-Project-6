@@ -24,35 +24,52 @@
 
     <!--Add code for webpage here-->
     <div class="row" id="exploratoryTitleRow">
-        <h1 id="exploratoryTitle" align="center">Exploratory Studies</h1>
+        <div class="card" style="width:100%; height:20vh; background-color: rgba(255, 255, 255, 0.50); border-bottom:0.5vh solid black"> 
+            <div id="exploratoryTitle" align="center">Exploratory Studies</div>            
+        </div>
     </div>
         
     <div class="row" id="exploratoryContentRow">
         <!--Pills column-->
-        <div class="col-2">
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
             <div class="tabs">
                 <ul class="tab-links" style="padding:0%">
                     <li class="active take-all-space exploratory"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space exploratory"><a href="#tab2">All Associated Majors</a></li>
                     <li class="take-all-space exploratory"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(0, 0, 0);"><-Back</a>
+                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
                 </ul>
             </div>
         </div>
     
         <!--Content column-->
-        <div class="col-10">
+        <div class="col-10" style="padding:0px">
             <div class="tabs">
                 <div class="tab-content">
+                    <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <h1>Tab 1 Content</h1>
-                    </div>
+                        <div disabled class="chatBox" id="chatBox_exploratory"></div>
                         
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_exploratory" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_exploratory">Send</button>
+                    </div>
+                    
                     <!--Login Tab-->
                     <div id="tab2" class="tab">
-                        <h1>Tab 2 Content</h1>
+                        <div class="column" style="width:50%; height:80vh; float:left; border-right:0.15vw solid black">
+                            <h2 id="title_insight">Insight</h2>
+                            <p class="insightParagraph">Here’s a secret: Loads of brilliant students don’t know what they want to major in. And that’s ok.</p>
+                            <p class="insightParagraph">Purdue’s Exploratory Studies lets you dive into a world of possibilities. Explore. Research. Find your passion. You’ll have up to four semesters to learn about yourself, select a major and head toward a career that fits you perfectly.</p>
+                        </div>
+                        <div class="column" style="width:50%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <h2 id="title_majors">Majors</h2>
+                            <div class="scrollBar" style="overflow-y:scroll; height:70vh; margin-left:1vw; font-size:1.25vw">
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/exploratory-studies-for-undecided-students.php" target="#">>Exploratory Studies</a>                       
+                            </div>
+                        </div>
                     </div>
-                        
+                    
                     <!--Register Tab-->
                     <div id="tab3" class="tab">
                         <h1>Tab 3 Content</h1>

@@ -24,35 +24,96 @@
 
     <!--Add code for webpage here-->
     <div class="row" id="liberalTitleRow">
-        <h1 id="liberalTitle" align="center">College of Liberal Arts</h1>
+        <div class="card" style="width:100%; height:20vh; background-color: rgba(255, 255, 255, 0.50); border-bottom:0.5vh solid black"> 
+            <div id="liberalTitle" align="center">College of Liberal Arts</div>            
+        </div>
     </div>
         
     <div class="row" id="liberalContentRow">
         <!--Pills column-->
-        <div class="col-2">
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
             <div class="tabs">
                 <ul class="tab-links" style="padding:0%">
                     <li class="active take-all-space liberal"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space liberal"><a href="#tab2">All Associated Majors</a></li>
                     <li class="take-all-space liberal"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(0, 0, 0);"><-Back</a>
+                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
                 </ul>
             </div>
         </div>
     
         <!--Content column-->
-        <div class="col-10">
+        <!--Content column-->
+        <div class="col-10" style="padding:0px">
             <div class="tabs">
                 <div class="tab-content">
+                    <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <h1>Tab 1 Content</h1>
-                    </div>
+                        <div disabled class="chatBox" id="chatBox_liberal"></div>
                         
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_liberal" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_liberal">Send</button>
+                    </div>
+                    
                     <!--Login Tab-->
                     <div id="tab2" class="tab">
-                        <h1>Tab 2 Content</h1>
+                        <div class="column" style="width:50%; height:80vh; float:left; border-right:0.15vw solid black">
+                            <h2 id="title_insight">Insight</h2>
+                            <p class="insightParagraph">The inspiration-packed College of Liberal Arts buzzes with opportunities. Unparalleled classroom experience. Exciting research. 230 study abroad programs. Some of the best practical experience going — with internships in business, not-for-profit organizations and government agencies.</p>
+                            <p class="insightParagraph">Liberal arts students are thinkers, doers and communicators. Led by faculty members who lead research grounded in theory but focused on impact. So no surprise, Liberal Arts grads have a competitive edge when it comes to bright, original thinking.</p>
+                        </div>
+                        <div class="column" style="width:50%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <h2 id="title_majors">Majors</h2>
+                            <div class="scrollBar" style="overflow-y:scroll; height:70vh; margin-left:1vw; font-size:1.25vw">
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/acting.php" target="#">>Acting</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/african-american-studies.php" target="#">>African American Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/american-studies.php" target="#">>American Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/anthropology.php" target="#">>Antrhopology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/art-history.php" target="#">>Art History</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/asian-studies.php" target="#">>Asian Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/chinese-studies.php" target="#">>Chinese Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/classical-studies.php" target="#">>Classical Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/communication-general.php" target="#">>Communication, General</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/comparative-literature.php" target="#">>Comparative Literature</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/creative-writing.php" target="#">>Creative Writing</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/economics-college-of-liberal-arts.php" target="#">>Economics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/english.php" target="#">>English</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/film-and-theatre-production.php" target="#">>Film and Theatre Production</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/film-and-video-studies.php" target="#">>Film and Video Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/french.php" target="#">>French</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/german.php" target="#">>German</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/global-studies.php" target="#">>Global Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/history.php" target="#">>History</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/industrial-consumer-product-design.php" target="#">>Industrial Design</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/integrated-studio-arts.php" target="#">>Integrated Studio Arts</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/interior-space-planning-design.php" target="#">>Interior Design</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/italian-studies.php" target="#">>Italian Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/japanese.php" target="#">>Japanese</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/jewish-studies.php" target="#">>Jewish Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/law-and-society.php" target="#">>Law and Society</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/linguistics.php" target="#">>Linguistics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/medieval-and-renaissance-studies.php" target="#">>Medieval and renaissance Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/philosophy.php" target="#">>Philosophy</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/political-science.php" target="#">>Political Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/professional-writing.php" target="#">>Professional Writing</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/religious-studies.php" target="#">>Religious Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/russian.php" target="#">>Russian</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/sociology.php" target="#">>Sociology</a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>
+                                <a class="hyperlink" href="" target="#">></a>     
+                            </div>
+                        </div>
                     </div>
-                        
+                    
                     <!--Register Tab-->
                     <div id="tab3" class="tab">
                         <h1>Tab 3 Content</h1>

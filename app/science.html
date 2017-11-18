@@ -24,42 +24,83 @@
 
    <!--Add code for webpage here-->
     <div class="row" id="scienceTitleRow">
-        <h1 id="scienceTitle" align="center">College of Science</h1>
+        <div class="card" style="width:100%; height:20vh; background-color: rgba(255, 255, 255, 0.50); border-bottom:0.5vh solid black"> 
+            <div id="scienceTitle" align="center">College of Science</div>            
+        </div>
     </div>
         
     <div class="row" id="scienceContentRow">
         <!--Pills column-->
-        <div class="col-2">
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
                 <div class="tabs">
                     <ul class="tab-links" style="padding:0%">
                         <li class="active take-all-space science"><a href="#tab1">Chat With Others!</a></li>
                         <li class="take-all-space science"><a href="#tab2">All Associated Majors</a></li>
                         <li class="take-all-space science"><a href="#tab3">Contact Information</a></li>
-                        <a href="../app/main.html" style="background-color:rgb(0, 0, 0);"><-Back</a>
+                        <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
                     </ul>
                 </div>
             </div>
         
-            <!--Content column-->
-            <div class="col-10">
-                <div class="tabs">
-                    <div class="tab-content">
-                        <div id="tab1" class="tab active">
-                            <h1>Tab 1 Content</h1>
+        <!--Content column-->
+        <div class="col-10" style="padding:0px">
+            <div class="tabs">
+                <div class="tab-content">
+                    <!--Chat tab-->
+                    <div id="tab1" class="tab active">
+                        <div disabled class="chatBox" id="chatBox_science"></div>
+                        
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_science" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_science">Send</button>
+                    </div>
+                    
+                    <!--Login Tab-->
+                    <div id="tab2" class="tab">
+                        <div class="column" style="width:50%; height:80vh; float:left; border-right:0.15vw solid black">
+                            <h2 id="title_insight">Insight</h2>
+                            <p class="insightParagraph">Students don’t come here to play it safe. They come here to change the world. Global warming. Infectious disease. Nanoscience.  At the College of Science you’ll work with fearless scientists who research, collaborate, teach – and make an impact.</p>
+                            <p class="insightParagraph">From your first year, you’ll take courses in your major and have opportunities to research with dedicated faculty who have an insatiable curiosity and love big ideas.</p>
+                            <p class="insightParagraph">Science degrees are incredibly versatile and the demand is sizzling in communities, business and around the world.  With the College of Science real-world approach to critical thinking and problem solving you will be ready to invent the future.</p>
                         </div>
-                            
-                        <!--Login Tab-->
-                        <div id="tab2" class="tab">
-                            <h1>Tab 2 Content</h1>
+                        <div class="column" style="width:50%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <h2 id="title_majors">Majors</h2>
+                            <div class="scrollBar" style="overflow-y:scroll; height:70vh; margin-left:1vw; font-size:1.25vw">
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/actuarial-science.php" target="#">>Actuarial Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/atmospheric-sciencemeteorology.php" target="#">>Atmospheric Sience/Meteorology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/biochemistry-biology.php" target="#">>Biochemistry (Biology)</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/biochemistry-chemistry.php" target="#">>Biochemistry (Chemistry)</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/biology.php" target="#">>Biology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/cell-molecular-and-developmental-biology.php" target="#">>Cell, Molecular, and Developmental Biology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/chemistry.php" target="#">>Chemistry</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/chemistry-american-chemical-society.php" target="#">>Chemistry-American Chemical Society</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/computer-science.php" target="#">>Computer Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/data-science.php" target="#">>Data Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/ecology-evolution-and-environmental-sciences.php" target="#">>Ecology, Evolution, and Environmental Science</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/environmental-geosciences.php" target="#">>Environmental Geosciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/genetic-biology.php" target="#">>Genetic Biology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/geology-and-geophysics.php" target="#">>Geology and Geophysics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/health-and-disease.php" target="#">>Health and Disease</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/mathematics.php" target="#">>Mathematics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/mathematics-education.php" target="#">>Mathematics Education</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/microbiology.php" target="#">>Microbiology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/neurobiology-and-physiology.php" target="#">>Neurobiology and Physiology</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/physics.php" target="#">>Physics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/planetary-sciences.php" target="#">>Planetary Sciences</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/science-education.php" target="#">>Science Education</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/statistics-applied-statistics.php" target="#">>Statistics-Applied Statistics</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/statistics-with-mathematics-option.php" target="#">>Statistics With Mathematics Option</a>
+                            </div>
                         </div>
-                            
-                        <!--Register Tab-->
-                        <div id="tab3" class="tab">
-                            <h1>Tab 3 Content</h1>
-                        </div>
+                    </div>
+                    
+                    <!--Register Tab-->
+                    <div id="tab3" class="tab">
+                        <h1>Tab 3 Content</h1>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
 </body>

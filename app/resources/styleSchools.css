@@ -2,6 +2,10 @@
     width:101vw;
 }
 
+.col-2 {
+    background: url("../resources/stripes.jpg");    
+}
+
 /*----- Tab Links -----*/
 /* Clearfix */
 .tab-links:after {
@@ -19,28 +23,28 @@
 .tab-links a {
     display:block;
     height:100%;
-    font-size:1.45vw;
+    font-size:1.2vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 255, 255);
+    color:rgb(194,142,14);
     transition:all linear 0.15s;
-    border:1px solid rgb(255, 255, 255);
+    border-top:1.5px solid rgb(255, 255, 255);
+    border-bottom:1.5px solid rgb(255, 255, 255);    
     font-family:Georgia, serif;
     width:100%;
 }
  
 /*Active tab*/
 li.active a, li.active a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(194,142,14);
     font-size: 1.45vw;
     text-align: center;
     vertical-align: middle;
-    border:solid rgb(255, 255, 255);
-    background-color:rgb(194,142,14);    
-    border-right:transparent;
-    border-top:transparent;
+    background-color:rgb(255, 255, 255);
+    border-top:2px solid rgb(0, 0, 0);   
+    border-bottom:2px solid rgb(0, 0, 0);   
 }
  
 .tab-links a:hover {
@@ -54,7 +58,7 @@ li.active a, li.active a:hover {
 
 /*----- Content of Tabs -----*/
 .tab-content {
-       
+       margin:0px;
 }
  
 .tab {
@@ -65,13 +69,78 @@ li.active a, li.active a:hover {
     display:block;
 }
 
+.insightParagraph {
+    text-indent:3vw; 
+    font-family: Georgia, serif; 
+    padding-left:2.5vw; 
+    padding-right:1.5vw;
+    font-size:1.25vw;
+    color:rgb(255, 255, 255);
+}
+#title_insight {
+    background-image: url("../resources/stripes.jpg"); 
+    background-size:25%;
+    color:rgb(194,142,14);
+    text-align: center;
+    justify-content: center;
+    height:7vh;
+    width:100%;
+    border-right:0.25vw solid rgb(0, 0, 0);
+    border-bottom:0.25vw solid rgb(0, 0, 0);
+    font-size:2.5vw;
+}
+
+#title_majors {
+    background-image: url("../resources/stripes.jpg"); 
+    background-size:25%;
+    color:rgb(194,142,14);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    height:7vh;
+    width:100%;
+    font-size:2.5vw;
+}
+
+.hyperlink {
+    width:100%;
+    display:block;
+    color:white;
+    text-decoration:underline;
+    font-family: Georgia, serif; 
+    padding-left: 2vw ;
+    text-indent: -2vw ;
+}
+
+.hyperlink:hover{
+    color:black;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color:rgb(49, 49, 49);
+}
+
 /*------------------------------AGRICULTURE------------------------------*/
 #agricultureTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom:solid;
+    border-bottom-color:rgb(0, 0, 0);
+    background: url("../resources/agriculture.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #agricultureTitle {
@@ -80,7 +149,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -91,16 +160,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .agriculture a {
-    background-color:#6B4536;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_agriculture {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_agriculture {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_agriculture {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------EDUCATION------------------------------*/
 #educationTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/education.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #educationTitle {
@@ -109,7 +220,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -120,16 +231,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .education a {
-    background-color:#085C11;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_education {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_education {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_education {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------ENGINEERING------------------------------*/
 #engineeringTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/engineering.jpg");    
+    background-position: 50% 50%;
+    background-size:100%;
 }
 
 #engineeringTitle {
@@ -138,7 +291,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -149,16 +302,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .engineering a {
-    background-color:rgb(241, 193, 0);
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_engineering {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_engineering {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_engineering {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------EXPLORATORY------------------------------*/
 #exploratoryTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/exploratory.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #exploratoryTitle {
@@ -167,7 +362,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -178,16 +373,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .exploratory a {
-    background-color:#BAA892;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_exploratory {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_exploratory {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_exploratory {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------HEALTH AND HUMAN------------------------------*/
 #healthTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/health.jpg");    
+    background-position: 50% 80%;
+    background-size:100%;
 }
 
 #healthTitle {
@@ -196,7 +433,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:5vw;    
+    font-size:6vw;    
     font-family: Georgia, serif;
 }
 
@@ -207,16 +444,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .health a {
-    background-color:#29A592;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_health {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_health {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_health {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------LIBERAL ARTS------------------------------*/
 #liberalTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/liberal.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #liberalTitle {
@@ -225,7 +504,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -236,16 +515,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .liberal a {
-    background-color:#849E2A;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_liberal {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_liberal {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_liberal {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------MANAGEMENT------------------------------*/
 #managementTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/management.jpg");    
+    background-position: 50% 40%;
+    background-size:100%;
 }
 
 #managementTitle {
@@ -265,16 +586,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .management a {
-    background-color:#6E99B4;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_management {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_management {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_management {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------PHARMACY------------------------------*/
 #pharmacyTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/pharmacy.png");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #pharmacyTitle {
@@ -283,7 +646,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -294,16 +657,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .pharmacy a {
-    background-color:#A3D6D7;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_pharmacy {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_pharmacy {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_pharmacy {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------POLYTECHNIC------------------------------*/
 #polytechnicTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/polytechnic.jpg");    
+    background-position: 50% 70%;
+    background-size:100%;
 }
 
 #polytechnicTitle {
@@ -312,7 +717,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:7vw;    
     font-family: Georgia, serif;
 }
 
@@ -323,16 +728,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .polytechnic a {
-    background-color:#B46012;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_polytechnic {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_polytechnic {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_polytechnic {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------SCIENCE------------------------------*/
 #scienceTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/science.jpg");    
+    background-position: 50% 80%;
+    background-size:100%;
 }
 
 #scienceTitle {
@@ -352,16 +799,58 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .science a {
-    background-color:#FF9B1A;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_science {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_science {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_science {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
 
 /*------------------------------VETERINARY MEDICINE------------------------------*/
 #veterinaryTitleRow {
     height: 20vh;
     background-color: rgb(0, 0, 0);
-    color: rgb(152, 112, 13);
-    border:solid;
-    border-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background: url("../resources/veterinary.jpg");    
+    background-position: 50% 40%;
+    background-size:100%;
 }
 
 #veterinaryTitle {
@@ -381,5 +870,46 @@ li.active a, li.active a:hover {
 
 /*Non active tabs*/
 .tab-links, .veterinary a {
-    background-color:#AD1F65;
+    background-color:rgb(59, 59, 59);
+}
+
+#chatBox_veterinary {
+    resize:none; 
+    text-align:left; 
+    margin-bottom:2vh;
+    margin-top:8vh;
+    margin-left:12vh;
+    height:58vh; 
+    width:84%; 
+    border-radius: 0.25em;     
+    border:0.45vh solid rgb(0, 0, 0); 
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y:auto;
+    word-wrap: normal;
+    font-family: Georgia, serif;
+}
+
+#messageBox_veterinary {
+    width: 73%; 
+    height: 4vh;
+    margin-left:12vh;
+    border-radius: 0.25em;         
+    border:0.45vh solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-family: Georgia, serif;
+}
+
+#sendButton_veterinary {
+    width: 8vw;
+    height: 4vh; 
+    margin-left: 0.5vw;
+    padding:0px;
+    font-size:2vh;
+    font-family: Georgia, serif;
+    border:0.35vh solid rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background: url("../resources/stripes.jpg");    
 }
