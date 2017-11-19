@@ -160,15 +160,17 @@ li.active a, li.active a:hover {
     background: url("../resources/agriculture.jpg");    
     background-position: 50% 70%;
     background-size:100%;
+    display:flex;
 }
 
 #agricultureTitle {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /*makes text align along vertical*/
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    vertical-align: middle;
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -239,7 +241,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -310,7 +312,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -381,7 +383,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -523,7 +525,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -665,7 +667,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -736,7 +738,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
@@ -807,8 +809,9 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:8vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
+    padding-top:0px;
 }
 
 #scienceContentRow {
@@ -878,7 +881,7 @@ li.active a, li.active a:hover {
     justify-content: center;
     width:100%;
     text-align: center;
-    font-size:7vw;    
+    font-size:6.5vw;    
     font-family: Georgia, serif;
 }
 
