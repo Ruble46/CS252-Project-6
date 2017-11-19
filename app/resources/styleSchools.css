@@ -131,6 +131,25 @@ li.active a, li.active a:hover {
     background-color:rgb(49, 49, 49);
 }
 
+.header {
+    color:rgb(255, 255, 255);
+    font-size:1.75vw;
+    margin-bottom:0px;
+    font-family:Georgia, serif;
+}
+
+.headerInfo {
+    color:rgb(0, 0, 0);
+    font-size:1.25vw;
+    font-family:Georgia, serif;
+}
+
+.headerSection {
+    color:white;
+    font-size:2.25vw;
+    font-family: Georgia, serif;
+}
+
 /*------------------------------AGRICULTURE------------------------------*/
 #agricultureTitleRow {
     height: 20vh;
