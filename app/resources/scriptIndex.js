@@ -46,8 +46,9 @@ $(document).ready(function(){
 				document.getElementById("loginStudentPassword").value = "";
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF SO THEN REDIRECT TO MAIN.HTML-------------------
-				window.location.href = "../app/main.html";					
-			}
+                window.location.href = "../app/main.html";
+
+            }
 		}
 	}); //End of student login button
 

@@ -16,6 +16,20 @@
 
 <body>
     <!--Dependencies-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAd2pFCgYby90MhLcPMMaK1Xxcyg_A7y7k",
+            authDomain: "boilerassist.firebaseapp.com",
+            databaseURL: "https://boilerassist.firebaseio.com",
+            projectId: "boilerassist",
+            storageBucket: "",
+            messagingSenderId: "346510483662"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <script src="dependencies/popper.min.js"></script>        
     <script src="dependencies/jquery-3.2.1.min.js"></script>
     <script src="dependencies/bootstrap.min.js"></script>
@@ -70,12 +84,20 @@
                                 
                                 <label style="color: #ffffff; font-size:1.5vw" for="loginStudentEmail">Email</label>
                                 <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentEmail" placeholder="Please enter your email">
-
                                 <label style="color: #ffffff; font-size:1.5vw" for="loginStudentPassword">Password</label>
                                 <input class="form-control" type="password" style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentPassword" placeholder="Please enter your password">
                             
                                 <div style="height:4vh;"> </div>                        
-                                <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn">Log In</button>
+                                <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn" onclick="purdueAccountLogin">Log In</button>
+                                <script>
+                                    function purdueAccountLogin() {
+                                        if (document.getElementById('loginStudentEmail').value.includes("purdue.edu")) {
+                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById('loginStudentPassword').value);
+
+                                        }
+
+                                    }
+                                </script>
                         </div>
                     </div>
                 </div>
@@ -91,8 +113,16 @@
                         <label style="color: #ffffff; font-size:1.5vw" for="registerStudentPassword">Password</label>
                         <input class="form-control" type="password" style="border:1px solid #000000; width:30vw; height:5vh" maxlength="32" id="registerStudentPassword" placeholder="Please enter your password">
                     
-                        <div style="height:4vh;"> </div>                        
-                        <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="registerStudentButton" class="btn">Register</button>
+                        <div style="height:4vh;"> </div>
+                        <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="registerStudentButton" class="btn" onclick="purdueAccountSignUp()">Register</button>
+                        <script>
+                            function purdueAccountSignUp() {
+                                if (document.getElementById('registerStudentEmail').value.includes("purdue.edu")) {
+                                    firebase.auth().createUserWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
+                                }
+                            }
+                        </script>
+
                 </div>
          
                 <!--Github Tab-->
