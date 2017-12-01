@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "mysql-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-execute": "^0.2.2"
   }
 }
