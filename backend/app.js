@@ -23,6 +23,25 @@ con.query('SELECT * FROM employees', (err,rows) => {
   console.log('Data received from Db:\n');
   console.log(rows);
   rows.forEach( (row) => { 
+    console.log(`${row.name} is in ${row.location}`); 
+  });
+});
+
+con.query("INSERT INTO customers (name, location) VALUES ('Brett', 'United States')", (err,rows) => {
+  if(err) throw err;
+  console.log('Data received from Db:\n');
+  console.log(rows);
+  rows.forEach( (row) => { 
+    console.log(`${row.name} is in ${row.location}`); 
+  });
+});
+
+con.query('SELECT * FROM employees', (err,rows) => {
+  if(err) throw err;
+
+  console.log('Data received from Db:\n');
+  console.log(rows);
+  rows.forEach( (row) => { 
   	console.log(`${row.name} is in ${row.location}`); 
   });
 });
