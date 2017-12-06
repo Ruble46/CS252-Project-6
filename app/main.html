@@ -27,6 +27,10 @@
     <div class="row" id="titleRow">
         <div class="card" style="width:100%; height:30vh; background-color: rgba(255, 255, 255, 0.45)">
             <div id="title" align="center" style="padding-top:3vh">boilerAssist</div>
+            <script>
+                var user = firebase.auth().currentUser
+               document.getElementById("title").innerHTML=user;
+            </script>
         </div>
     </div>
 
