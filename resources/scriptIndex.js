@@ -26,7 +26,7 @@ $(document).ready(function(){
 		} else {
 		//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
 		//READY TO REDIRECT TO MAIN.HTML----------------------------------------------------------------
-			window.location.href = "../app/main.html";	
+			window.location.href = "../main.html";	
 		}
 	}); //End of guest login button
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
 				document.getElementById("loginStudentPassword").value = "";
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF SO THEN REDIRECT TO MAIN.HTML-------------------
-                window.location.href = "../app/main.html";
+                window.location.href = "../main.html";
 
             }
 		}
@@ -68,7 +68,7 @@ $(document).ready(function(){
 				document.getElementById("registerStudentPassword").value = "";
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF NOT THEN REDIRECT TO MAIN.HTML-------------------
-				window.location.href = "../app/main.html";					
+				window.location.href = "../main.html";					
 			}
 		}
 	}); //End of register student button

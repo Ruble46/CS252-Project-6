@@ -1,50 +1,50 @@
 $(document).ready(function(){
     $("#agricultureButton").click(function() {
-        window.location.href = "../app/agriculture.html";	
+        window.location.href = "../agriculture.html";	
     });
 
     $("#educationButton").click(function() {
-        window.location.href = "../app/education.html";	
+        window.location.href = "../education.html";	
     });
 
     $("#engineeringButton").click(function() {
-        window.location.href = "../app/engineering.html";	
+        window.location.href = "../engineering.html";	
     });
 
     $("#exploratoryButton").click(function() {
-        window.location.href = "../app/exploratory.html";	
+        window.location.href = "../exploratory.html";	
     });
 
     $("#healthButton").click(function() {
-        window.location.href = "../app/healthAndHuman.html";	
+        window.location.href = "../healthAndHuman.html";	
     });
 
     $("#liberalButton").click(function() {
-        window.location.href = "../app/liberalArts.html";	
+        window.location.href = "../liberalArts.html";	
     });
 
     $("#managementButton").click(function() {
-        window.location.href = "../app/management.html";	
+        window.location.href = "../management.html";	
     });
 
     $("#pharmacyButton").click(function() {
-        window.location.href = "../app/pharmacy.html";	
+        window.location.href = "../pharmacy.html";	
     });
 
     $("#polytechnicButton").click(function() {
-        window.location.href = "../app/polytechnic.html";	
+        window.location.href = "../polytechnic.html";	
     });
 
     $("#scienceButton").click(function() {
-        window.location.href = "../app/science.html";	
+        window.location.href = "../science.html";	
     });
 
     $("#veterinaryButton").click(function() {
-        window.location.href = "../app/veterinaryMedicine.html";	
+        window.location.href = "../veterinaryMedicine.html";	
     });
 
     $("#logoutButton").click(function() {
-        window.location.href = "../app/index.html";
+        window.location.href = "../index.html";
     })
 
 });
