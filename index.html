@@ -82,17 +82,19 @@
 
                                 <label style="color: #ffffff; font-size:1.5vw" for="loginStudentEmail">Purdue Email</label>
                                 <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentEmail" placeholder="Please enter your Purdue email">
-                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentDisplayName">Display Name</label>
+                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentPassword">Password</label>
                                 <input class="form-control" type="password" style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentPassword" placeholder="Please enter your displayName">
 
                                 <div style="height:4vh;"> </div>
                                 <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn" onclick="purdueAccountLogin()">Log In</button>
                                 <script>
                                     function purdueAccountLogin() {
-                                        firebase.auth().createUserWithEmailAndPassword(document.getElementById("loginStudentEmail").value, "123456").catch(function(error) {
-                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, "123456");
+                                        firebase.auth().createUserWithEmailAndPassword(document.getElementById("loginStudentEmail").value, document.getElementById("loginStudentPassword").value).catch(function(error) {
+                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById("loginStudentPassword").value).catch(function(error) {
+                                                window.alert("Error, please try again");
+                                            });
                                         });
-                                        firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, "123456");
+                                        firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById("loginStudentEmail").value);
                                     }
                                 </script>
 
