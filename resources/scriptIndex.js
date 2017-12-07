@@ -43,7 +43,7 @@ $(document).ready(function(){
 			if(email.indexOf("@purdue.edu") == -1) {
 				window.alert("Please enter a purdue domain email that is already registered.");
 				document.getElementById("loginStudentEmail").value = "";
-				document.getElementById("loginStudentPassword").value = "";
+				document.getElementById("loginStudentDisplayName").value = "";
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF SO THEN REDIRECT TO MAIN.HTML-------------------
                 window.location.href = "main.html";
@@ -52,24 +52,5 @@ $(document).ready(function(){
 		}
 	}); //End of student login button
 
-	//REGISTER STUDENT BUTTON
-	$("#registerStudentButton").click(function() {
-		var email = document.getElementById("registerStudentEmail").value;
-		var displayName = email.replace("@purdue.edu", "");
-		var password = document.getElementById("registerStudentPassword").value;
-		
-		if(email == null || email == "" || password == null || password == "") {
-			window.alert("Please fill in any missing fields.");
-		} else {
-			//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
-			if(email.indexOf("@purdue.edu") == -1) {
-				window.alert("Please enter a purdue domain email to register.");
-				document.getElementById("registerStudentEmail").value = "";
-				document.getElementById("registerStudentPassword").value = "";
-			} else {
-				//CHECK IF CREDENTIALS EXIST IN THE DB, IF NOT THEN REDIRECT TO MAIN.HTML-------------------
-				window.location.href = "main.html";					
-			}
-		}
-	}); //End of register student button
+
 }); //End of document.ready
