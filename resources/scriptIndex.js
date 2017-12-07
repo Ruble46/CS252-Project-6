@@ -36,8 +36,8 @@ $(document).ready(function(){
 	$("#loginStudentButton").click(function() {
 		var email = document.getElementById("loginStudentEmail").value;
 		var verifiedEmail = false;
-		//var displayName = email.replace("@purdue.edu", "");
-		var displayName = document.getElementById("loginStudentDisplayName").value;
+		var displayName = email.replace("@purdue.edu", "");
+
 		
 		if(email == null || email == "" || displayName == null || verifiedEmail == false) {
 			window.alert("Please fill in any missing fields.");
