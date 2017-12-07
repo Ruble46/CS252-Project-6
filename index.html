@@ -92,9 +92,7 @@
                                 <script>
                                     function purdueAccountLogin() {
                                         if (document.getElementById('loginStudentEmail').value.includes("purdue.edu")) {
-                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById('loginStudentPassword').value).catch(function(error) {
-                                                console.log(error.code)
-                                                )};
+                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById('loginStudentPassword').value)
 
                                         }
 
@@ -120,8 +118,10 @@
                         <script>
                             function purdueAccountSignUp() {
                                 if (document.getElementById('registerStudentEmail').value.includes("purdue.edu")) {
-                                    firebase.auth().createUserWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
+                                    firebase.auth().createUserWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value)
+
                                 }
+
                             }
                         </script>
 
