@@ -35,10 +35,11 @@ $(document).ready(function(){
 	//STUDENT LOGIN BUTTON
 	$("#loginStudentButton").click(function() {
 		var email = document.getElementById("loginStudentEmail").value;
+		var verifiedEmail = false;
 		//var displayName = email.replace("@purdue.edu", "");
 		var displayName = document.getElementById("loginStudentDisplayName").value;
 		
-		if(email == null || email == "" || displayName == null) {
+		if(email == null || email == "" || displayName == null || verifiedEmail == false) {
 			window.alert("Please fill in any missing fields.");
 		} else {
 			//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
