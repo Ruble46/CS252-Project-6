@@ -26,6 +26,8 @@ $(document).ready(function(){
 		} else {
 		//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
 		//READY TO REDIRECT TO MAIN.HTML----------------------------------------------------------------
+            var chatGuestUser = displayName + "_GUEST";
+            localStorage.LOGGEDINDISPLAY = chatGuestUser;
 			window.location.href = "main.html";	
 		}
 	}); //End of guest login button
@@ -33,10 +35,10 @@ $(document).ready(function(){
 	//STUDENT LOGIN BUTTON
 	$("#loginStudentButton").click(function() {
 		var email = document.getElementById("loginStudentEmail").value;
-		var displayName = email.replace("@purdue.edu", "");
-		var password = document.getElementById("loginStudentPassword").value;
+		//var displayName = email.replace("@purdue.edu", "");
+		var displayName = document.getElementById("loginStudentDisplayName").value;
 		
-		if(email == null || email == "" || password == null || password == "") {
+		if(email == null || email == "" || displayName == null) {
 			window.alert("Please fill in any missing fields.");
 		} else {
 			//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
@@ -46,6 +48,8 @@ $(document).ready(function(){
 				document.getElementById("loginStudentDisplayName").value = "";
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF SO THEN REDIRECT TO MAIN.HTML-------------------
+				var chatStudentUser = displayName + "_PURDUE";
+				localStorage.LOGGEDINDISPLAY = chatStudentUser;
                 window.location.href = "main.html";
 
             }
