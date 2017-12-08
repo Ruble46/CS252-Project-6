@@ -17,6 +17,13 @@
 
 <body>
     <!--Dependencies-->
+    <script>
+        var authenticateCheck = document.cookie;
+        if (!authenticateCheck) {
+            alert(authenticateCheck);
+            window.stop();
+        }
+    </script>
     <script src="dependencies/popper.min.js"></script>        
     <script src="dependencies/jquery-3.2.1.min.js"></script>
     <script src="dependencies/bootstrap.min.js"></script>

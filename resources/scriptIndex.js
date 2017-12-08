@@ -58,9 +58,7 @@ $(document).ready(function(){
                     window.location.href = "main.html";
 
                 }
-                else {
-                    alert("Username or password is not correct, try again!")
-                }
+
 
             }
 		}
