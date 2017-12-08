@@ -63,8 +63,8 @@
                        <script>
                            function joinChatAg() {
                                var curruser = localStorage.LOGGEDINDISPLAY;
-                               var userCollege = curruser + "_Agriculture";
-                               localStorage.USERCOLLEGE = userCollege;
+                               var url = "http://purdueboilerassistchat.herokuapp.com?" + curruser;
+                               window.open(url);
                            }
                        </script>
                     </div>
