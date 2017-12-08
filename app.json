@@ -1,0 +1,19 @@
+{
+  "name": "Socket-Chat",
+  "description": "Chat for purduerboilerAssist",
+  "website": "",
+  "repository": "",
+  "logo": "",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "socket.io",
+    "realtime",
+    "websocket"
+  ],
+  "scripts": {
+  },
+  "addons": [
+  ]
+}

@@ -44,6 +44,8 @@ $(document).ready(function(){
     });
 
     $("#logoutButton").click(function() {
+        localStorage.clear();
+        document.cookie = "authenticated=false";
         window.location.href = "index.html";
     })
 

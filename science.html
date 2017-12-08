@@ -17,7 +17,14 @@
 
 <body>
    <!--Dependencies-->
-   <script src="dependencies/popper.min.js"></script>       
+   <script>
+       var authenticateCheck = document.cookie;
+       if (authenticateCheck != "authenticated=true" || authenticateCheck == null) {
+           alert(authenticateCheck);
+           window.stop();
+       }
+   </script>
+   <script src="dependencies/popper.min.js"></script>
    <script src="dependencies/jquery-3.2.1.min.js"></script>
    <script src="dependencies/bootstrap.min.js"></script>
    <script src="resources/scriptSchools.js"></script>
@@ -37,7 +44,7 @@
                         <li class="active take-all-space science"><a href="#tab1">Chat With Others!</a></li>
                         <li class="take-all-space science"><a href="#tab2">Insight and Majors</a></li>
                         <li class="take-all-space science"><a href="#tab3">Contact Information</a></li>
-                        <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
+
                     </ul>
                 </div>
             </div>

@@ -17,6 +17,13 @@
 
 <body>
     <!--Dependencies-->
+    <script>
+        var authenticateCheck = document.cookie;
+        if (authenticateCheck != "authenticated=true" || authenticateCheck == null) {
+            alert(authenticateCheck);
+            window.stop();
+        }
+    </script>
     <script src="dependencies/popper.min.js"></script>        
     <script src="dependencies/jquery-3.2.1.min.js"></script>
     <script src="dependencies/bootstrap.min.js"></script>
@@ -37,7 +44,7 @@
                     <li class="active take-all-space agriculture"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space agriculture"><a href="#tab2">Insight and Majors</a></li>
                     <li class="take-all-space agriculture"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
+
                 </ul>
             </div>
         </div>
@@ -48,11 +55,18 @@
                 <div class="tab-content">
                     <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <div disabled class="chatBox" id="chatBox_agriculture"></div>
+                        <div disabled class="chatBox" id="chatBox_agriculture">Click the button below to join the global chat!</div>
                         
                    <form name="message" action="">
                        <input type="text" id="messageBox_agriculture" maxlength="1000">
-                       <button type="button" class="btn" id="sendButton_agriculture">Send</button>
+                       <button type="button" class="btn" id="sendButton_agriculture" onclick="joinChatAg()">Join</button>
+                       <script>
+                           function joinChatAg() {
+                               var curruser = localStorage.LOGGEDINDISPLAY;
+                               var userCollege = curruser + "_Agriculture";
+                               localStorage.USERCOLLEGE = userCollege;
+                           }
+                       </script>
                     </div>
                     
                     <!--Login Tab-->
