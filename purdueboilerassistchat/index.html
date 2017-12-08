@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Chat</title>
+        <style>
+	       * { 
+                margin: 0; 
+                padding: 0; 
+
+            }
+            body { 	
+                font: 15px Arial; 
+                background:rgb(204,153,0);
+            }
+            form {
+	           padding: 3px; 
+               background: #000; 
+               position: fixed; 
+               bottom: 0; 
+               width: 90%;
+               margin-left: 1%;
+               margin-right: 1%;
+            }
+            form input {
+	           border: 0; 
+               padding: 10px; 
+               width: 85%; 
+               margin-left: 1%;
+               margin-right: 1%;
+            }
+            form button { 
+	           color: white;
+               width: 9%;
+               background: rgb(0, 0, 0); 
+               border: none; 
+               padding: 10px;
+            }
+            #messages { 
+	           list-style-type: none; 
+               margin: 0; 
+               padding: 0;
+               margin-bottom: 40px 
+            }
+            #messages li { 
+	           padding: 10px 15px; 
+            }
+        </style>
+    </head>
+    <body>
+    <ul id="messages"></ul>
+    <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            var socket = io();
+            $('form').submit(function(){
+                socket.emit('chat message', $('#m').val());
+                $('#m').val('');
+                return false;
+            });
+            socket.on('chat message', function(msg){
+            $('#messages').append($('<li>').text(msg));
+                window.scrollTo(0, document.body.scrollHeight);
+            });
+      });
+    </script>
+  </body>
+</html>
