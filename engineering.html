@@ -1,0 +1,145 @@
+<!doctype html> 
+
+<html>
+<head>
+    <!--Tab text-->
+    <title>Engineering</title>
+    
+    <!--Dependencies-->
+    <link href="dependencies/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/styleSchools.css" rel="stylesheet">
+
+    <!--Add background image here if needed-->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--Dependencies-->
+    <script>
+        var authenticateCheck = document.cookie;
+        if (authenticateCheck != "authenticated=true" || authenticateCheck == null) {
+            alert(authenticateCheck);
+            window.stop();
+        }
+    </script>
+    <script src="dependencies/popper.min.js"></script>    
+    <script src="dependencies/jquery-3.2.1.min.js"></script>
+    <script src="dependencies/bootstrap.min.js"></script>
+    <script src="resources/scriptSchools.js"></script>
+
+    <!--Add code for webpage here-->
+    <div class="row" id="engineeringTitleRow">
+        <div class="card" style="width:100%; height:20vh; background-color: rgba(255, 255, 255, 0.50); border-bottom:0.5vh solid black"> 
+            <div id="engineeringTitle" align="center">College of Engineering</div>            
+        </div>
+    </div>
+        
+    <div class="row" id="engineeringContentRow">
+        <!--Pills column-->
+        <div class="col-2" style="background-color:rgb(77, 77, 77);border-right:0.5vh solid black;padding:0px;">
+            <div class="tabs">
+                <ul class="tab-links" style="padding:0%">
+                    <li class="active take-all-space engineering"><a href="#tab1">Chat With Others!</a></li>
+                    <li class="take-all-space engineering"><a href="#tab2">Insight and Majors</a></li>
+                    <li class="take-all-space engineering"><a href="#tab3">Contact Information</a></li>
+
+                </ul>
+            </div>
+        </div>
+    
+        <!--Content column-->
+        <div class="col-10" style="padding:0px">
+            <div class="tabs">
+                <div class="tab-content">
+                    <!--Chat tab-->
+                    <div id="tab1" class="tab active">
+                        <div disabled class="chatBox" id="chatBox_engineering">Click the button below to join the global chat!</div>
+                        
+                   <form name="message" action="">
+                       <input type="text" id="messageBox_engineering" maxlength="1000">
+                       <button type="button" class="btn" id="sendButton_engineering" onclick="joinChatEng()" >Join</button>
+                       <script>
+                           function joinChatEng() {
+                               var curruser = localStorage.LOGGEDINDISPLAY;
+                               var url = "www.purdueboilerassistchat.herokuapp.com?" + curruser;
+                               window.open(url);
+                           }
+                       </script>
+                    </div>
+                    
+                    <!--Login Tab-->
+                    <div id="tab2" class="tab">
+                        <div class="column" style="width:50%; height:80vh; float:left; border-right:0.15vw solid black">
+                            <h2 id="title_insight">Insight</h2>
+                            <p class="insightParagraph">Buckle up - Purdue engineering is a ride of a lifetime. During your first power-packed year, you'll explore all of Purdue's engineering disciplines so that you can zero in on the one that fits you best. You'll study side-by-side with world experts who have razor-like focus on your success - and you'll have a blast on the way. </p>
+                            <p class="insightParagraph">From life-changing prosthetics and water purification systems to high-tech solar panels and smartphone apps - engineers design solutions to tackle some of the world's greatest challenges. Imagination. Curiosity. Impact. Travel to any corner of the globe and say you're a Boilermaker engineer and you have instant street cred. By learning how to think, Purdue engineers are changing the world one challenge at a time.</p>
+                        </div>
+                        <div class="column" style="width:50%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <h2 id="title_majors">Majors</h2>
+                            <div class="scrollBar" style="overflow-y:scroll; height:70vh; margin-left:1vw; font-size:1.25vw">
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/aeronautical-and-astronautical-engineering.php" target="#">>Aeronautical and Astronautical Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/agricultural-engineering-engr.php" target="#">>Agricultural Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/biological-engineering-multiple-concentrations-engr.php" target="#">>Biological Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/biomedical-engineering.php" target="#">>Biomedical Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/chemical-engineering.php" target="#">>Chemical Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/civil-engineering.php" target="#">>Civil Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/computer-engineering.php" target="#">>Computer Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/construction-engineering.php" target="#">>Construction Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/electrical-engineering.php" target="#">>Electrical Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/environmental-and-ecological-engineering.php" target="#">>Environmental and Ecological Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/environmental-and-natural-resources-engineering-engr.php" target="#">>Environmental and Natural Resources Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/industrial-engineering.php" target="#">>Industrial Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/interdisciplinary-engineering-studies.php" target="#">>Interdisciplinary Engineering Studies</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/materials-engineering.php" target="#">>Materials Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/mechanical-engineering.php" target="#">>Mechanical Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/multidisciplinary-engineering.php" target="#">>Multidisciplinary Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/nuclear-engineering.php" target="#">>Nuclear Engineering</a>
+                                <a class="hyperlink" href="https://admissions.purdue.edu/majors/a-to-z/undecided-within-engineering.php" target="#">>Undecided Within Engineering</a>                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Register Tab-->
+                    <div id="tab3" class="tab">
+                        <div class="column" style="overflow-y:scroll; overflow-x:hidden; width:40%; height:80vh; float:left; border-right:0.15vw solid black; padding-top:2vw; padding-left:2.5vw">
+                            <h2 class="headerSection">Prospective Students</h2>
+                            <h4 class="header">Address</h4>
+                            <h5 class="headerInfo">Neil Armstrong Hall of Engineering, Room 1085, 701 W.Stadium Ave. West Lafayette, IN 47907</h5>
+                            <h4 class="header">Email</h4>
+                            <h5 class="headerInfo">future-engineers@purdue.edu</h5>
+                            <h4 class="header">Phone</h4>
+                            <h5 class="headerInfo">(765) 494-3975</h5>
+                            
+                            <h2 class="headerSection" style="padding-top:2vh">Student Advising</h2>
+                            <h4 class="header">Address</h4>
+                            <h5 class="headerInfo">Neil Armstrong Hall of Engineering Room 1300, 701 W. Stadium Ave. West Lafayette, IN 47907</h5>
+                            <h4 class="header">Phone</h4>
+                            <h5 class="headerInfo">(765) 494-9713</h5>
+                            
+                            <h2 class="headerSection" style="padding-top:2vh">Dean's Office</h2>
+                            <h4 class="header">Dean</h4>
+                            <h5 class="headerInfo">Mung Chiang</h5>
+                            <h4 class="header">Address</h4>
+                            <h5 class="headerInfo">Neil Armstrong Hall of Engineering, Suite 3000, 701 West Stadium Ave. West Lafayette, IN 47907</h5>
+                            <h4 class="header">Email</h4>
+                            <h5 class="headerInfo">deanofengineering@purdue.edu</h5>
+
+                            <h4 class="header" style="padding-top:3vh">Enrollment</h4>
+                            <h5 class="headerInfo">2017 Fall: 9% of 41,573</h5>
+                        
+                            <h4 class="headerInfo" style="margin-top:4vh">*For major specific contact information, please select a major on the previous tab.</h4>
+                        </div>
+                        <div class="map" style="width:60%; height:80vh; float:right; border-left:0.15vw solid black">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9975486938383!2d-86.9170941841977!3d40.43105317936359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812fd4d2c94148b%3A0xbe2d6407d66fe7aa!2sNeil+Armstrong+Hall+of+Engineering!5e0!3m2!1sen!2sus!4v1511072964274" style="margin-top:5%; margin-left:5%; width:90%; height:88%; border:0.25vw solid black" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+
+</body>
