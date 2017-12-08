@@ -85,16 +85,15 @@ $(document).ready(function(){
                 var chatStudentUser = displayName + "_PURDUE";
                // firebase.auth().signInWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
                 var currUser = firebase.auth().currentUser;
-                alert(currUser);
+               // alert(currUser);
 
                 if (currUser != null) {
                     localStorage.LOGGEDINDISPLAY = chatStudentUser;
+		    document.cookie = "authenticated=true";
                     window.location.href = "main.html";
 
-				}
-				else {
-                	alert("User already exists!")
-				}
+		}
+			
             }
         }
     }); //End of register student button

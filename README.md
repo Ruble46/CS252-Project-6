@@ -1,13 +1,19 @@
-# chat-example
+Members
+Craig Ruble: cruble@purdue.edu
+Brett Eiffert: beiffert@purdue.edu
+Vikram Pasumarti: vpasuma@purdue.edu
 
-This is the source code for a very simple chat example used for
-the [Getting Started](http://socket.io/get-started/chat/) guide
-of the Socket.IO website.
+Title
+ boilerAssist
 
-Please refer to it to learn how to run this application.
+Description
+Provide a pleasing interface where current students and future students can communicate among themselves. We also want to provide a centralized location where any student can find contact information for any college of Purdue and majors that each provide.
 
-You can also spin up a free Heroku dyno to test it out:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/socketio/chat-example)
-
-Besides, the application is deployed on [Now](https://zeit.co/now): https://socketio-chat-example.now.sh/
+Technologies Planned (As of now)
+-Bootstrap v4
+-JQuery 3.2.1
+-Popper
+-Node.js
+-FireBase
+-Socket.io
+Javascript
