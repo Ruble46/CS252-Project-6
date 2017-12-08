@@ -28,6 +28,7 @@ $(document).ready(function(){
 		//READY TO REDIRECT TO MAIN.HTML----------------------------------------------------------------
             var chatGuestUser = displayName + "_GUEST";
             localStorage.LOGGEDINDISPLAY = chatGuestUser;
+            document.cookie = "authenticated=true";
 			window.location.href = "main.html";	
 		}
 	}); //End of guest login button

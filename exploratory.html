@@ -19,7 +19,7 @@
     <!--Dependencies-->
     <script>
         var authenticateCheck = document.cookie;
-        if (!authenticateCheck) {
+        if (authenticateCheck != "authenticated=true" || authenticateCheck == null) {
             alert(authenticateCheck);
             window.stop();
         }
@@ -44,7 +44,7 @@
                     <li class="active take-all-space exploratory"><a href="#tab1">Chat With Others!</a></li>
                     <li class="take-all-space exploratory"><a href="#tab2">Insight and Majors</a></li>
                     <li class="take-all-space exploratory"><a href="#tab3">Contact Information</a></li>
-                    <a href="../app/main.html" style="background-color:rgb(255, 255, 255); color:rgb(160, 116, 13); border-color:black;"><- Back</a>
+
                 </ul>
             </div>
         </div>
@@ -55,11 +55,18 @@
                 <div class="tab-content">
                     <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <div disabled class="chatBox" id="chatBox_exploratory"></div>
+                        <div disabled class="chatBox" id="chatBox_exploratory">Click the button below to join the global chat!</div>
                         
                    <form name="message" action="">
                        <input type="text" id="messageBox_exploratory" maxlength="1000">
-                       <button type="button" class="btn" id="sendButton_exploratory">Send</button>
+                       <button type="button" class="btn" id="sendButton_exploratory" onclick="joinChatEx()">Join</button>
+                       <script>
+                           function joinChatEx() {
+                               var curruser = localStorage.LOGGEDINDISPLAY;
+                               var url = "http://purdueboilerassistchat.herokuapp.com?" + curruser;
+                               window.open(url);
+                           }
+                       </script>
                     </div>
                     
                     <!--Login Tab-->

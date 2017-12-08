@@ -23,7 +23,7 @@
     <script src="resources/scriptMain.js"></script>
     <script>
         var authenticateCheck = document.cookie;
-        if (!authenticateCheck) {
+        if (authenticateCheck != "authenticated=true" || authenticateCheck == null) {
             alert(authenticateCheck);
             window.stop();
         }

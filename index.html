@@ -93,10 +93,7 @@
                             function purdueAccountLogin() {
                                 if (document.getElementById('loginStudentEmail').value.includes("purdue.edu")) {
                                     firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById('loginStudentPassword').value)
-                                    var i = 0;
-                                    while(i < 1000) {
-                                        i++;
-                                    }
+
 
                                 }
 
