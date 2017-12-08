@@ -35,11 +35,11 @@ $(document).ready(function(){
 	//STUDENT LOGIN BUTTON
 	$("#loginStudentButton").click(function() {
 		var email = document.getElementById("loginStudentEmail").value;
-		var verifiedEmail = false;
+		var password = document.getElementById("loginStudentPassword").value;
 		var displayName = email.replace("@purdue.edu", "");
 
 		
-		if(email == null || email == "" || displayName == null || verifiedEmail == false) {
+		if(email == null || email == "" || password == null) {
 			window.alert("Please fill in any missing fields.");
 		} else {
 			//console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
@@ -50,12 +50,55 @@ $(document).ready(function(){
 			} else {
 				//CHECK IF CREDENTIALS EXIST IN THE DB, IF SO THEN REDIRECT TO MAIN.HTML-------------------
 				var chatStudentUser = displayName + "_PURDUE";
-				localStorage.LOGGEDINDISPLAY = chatStudentUser;
-                window.location.href = "main.html";
+                var currUser = firebase.auth().currentUser;
+
+				if (currUser  != null) {
+                    localStorage.LOGGEDINDISPLAY = chatStudentUser;
+                    document.cookie = "authenticated=true";
+                    window.location.href = "main.html";
+
+                }
+                else {
+                    alert("Username or password is not correct, try again!")
+                }
 
             }
 		}
 	}); //End of student login button
+    //REGISTER STUDENT BUTTON
+    $("#registerStudentButton").click(function() {
+        var email = document.getElementById("registerStudentEmail").value;
+        var displayName = email.replace("@purdue.edu", "");
+        var password = document.getElementById("registerStudentPassword").value;
+
+        if(email == null || email == "" || password == null || password == "") {
+            window.alert("Please fill in any missing fields.");
+        }
+
+        else {
+            //console.log("Display Name: " + displayName + ", Email: " + email + ", Password: " + password);
+            if(email.indexOf("@purdue.edu") == -1) {
+                window.alert("Please enter a purdue domain email to register.");
+                document.getElementById("registerStudentEmail").value = "";
+                document.getElementById("registerStudentPassword").value = "";
+            } else {
+                //CHECK IF CREDENTIALS EXIST IN THE DB, IF NOT THEN REDIRECT TO MAIN.HTML-------------------
+                var chatStudentUser = displayName + "_PURDUE";
+               // firebase.auth().signInWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
+                var currUser = firebase.auth().currentUser;
+                alert(currUser);
+
+                if (currUser != null) {
+                    localStorage.LOGGEDINDISPLAY = chatStudentUser;
+                    window.location.href = "main.html";
+
+				}
+				else {
+                	alert("User already exists!")
+				}
+            }
+        }
+    }); //End of register student button
 
 
 }); //End of document.ready

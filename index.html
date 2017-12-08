@@ -15,103 +15,125 @@
 </head>
 
 <body>
-    <!--Dependencies-->
-    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAd2pFCgYby90MhLcPMMaK1Xxcyg_A7y7k",
-            authDomain: "boilerassist.firebaseapp.com",
-            databaseURL: "https://boilerassist.firebaseio.com",
-            projectId: "boilerassist",
-            storageBucket: "boilerassist.appspot.com",
-            messagingSenderId: "346510483662"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="dependencies/popper.min.js"></script>
-    <script src="dependencies/jquery-3.2.1.min.js"></script>
-    <script src="dependencies/bootstrap.min.js"></script>
-    <script src="resources/scriptIndex.js"></script>
+<!--Dependencies-->
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAd2pFCgYby90MhLcPMMaK1Xxcyg_A7y7k",
+        authDomain: "boilerassist.firebaseapp.com",
+        databaseURL: "https://boilerassist.firebaseio.com",
+        projectId: "boilerassist",
+        storageBucket: "boilerassist.appspot.com",
+        messagingSenderId: "346510483662"
+    };
+    firebase.initializeApp(config);
+</script>
 
-    <!--Add code for webpage here-->
-    <!--Title row-->
-    <div class="row" id="titleRow">
-        <div class="card" style="width:100%; height:30vh; background-color: rgba(255, 255, 255, 0.45)">
-            <div id="title" align="center" style="padding-top:3vh">boilerAssist</div>
-        </div>
+<script src="dependencies/popper.min.js"></script>
+<script src="dependencies/jquery-3.2.1.min.js"></script>
+<script src="dependencies/bootstrap.min.js"></script>
+<script src="resources/scriptIndex.js"></script>
+
+<!--Add code for webpage here-->
+<!--Title row-->
+<div class="row" id="titleRow">
+    <div class="card" style="width:100%; height:30vh; background-color: rgba(255, 255, 255, 0.45)">
+        <div id="title" align="center" style="padding-top:3vh">boilerAssist</div>
     </div>
+</div>
 
-    <!--Button row-->
-    <div class="row" id="buttonRow" >
-        <div class="tabs">
-            <ul class="tab-links">
-                <li class="active"><a href="#tab1">Home</a></li>
-                <li><a href="#tab2" >Login</a></li>
-                <li><a href="#tab4">Github</a></li>
-            </ul>
+<!--Button row-->
+<div class="row" id="buttonRow">
+    <div class="tabs">
+        <ul class="tab-links" style="padding:0%">
+            <li class="active"><a href="#tab1">Home</a></li>
+            <li><a href="#tab2">Login</a></li>
+            <li><a href="#tab3">Register</a></li>
+            <li><a href="#tab4">Github</a></li>
+        </ul>
 
-            <div class="tab-content">
-                <!--Home Tab-->
-                <div id="tab1" class="tab active">
-                    <p style="color:white; font-size: 3vw; margin-bottom:0px; padding-left:8vw; padding-top:6vh">Our Goal</p>
-                    <p class="paragraph" style="padding-left:8vw; padding-right:6vw"> Provide a pleasing interface where current
-                        students and future students can communicate among themselves. We also want to provide a centralized location
-                        where any student can find contact information for any college of Purdue and majors that each provide.</p>
-                </div>
+        <div class="tab-content">
+            <!--Home Tab-->
+            <div id="tab1" class="tab active">
+                <p style="color:white; font-size: 3vw; margin-bottom:0px; padding-left:8vw; padding-top:6vh">Our Goal</p>
+                <p class="paragraph" style="padding-left:8vw; padding-right:6vw"> Provide a pleasing interface where current
+                    students and future students can communicate among themselves. We also want to provide a centralized location
+                    where any student can find contact information for any college of Purdue and majors that each provide.</p>
+            </div>
 
-                <!--Login Tab-->
-                <div id="tab2" class="tab">
-                    <div class="row">
-                        <!--Login in as guest-->
-                        <div class="column" id="loginGuest">
-                            <h1 style="font-size:2.5vw">Login As Guest</h1>
-                            <div style="height:3vh;"> </div>
+            <!--Login Tab-->
+            <div id="tab2" class="tab">
+                <div class="row">
+                    <!--Login in as guest-->
+                    <div class="column" id="loginGuest">
+                        <h1 style="font-size:2.5vw">Login As Guest</h1>
+                        <div style="height:3vh;"> </div>
 
-                            <label style="color: #ffffff; font-size:1.5vw" for="loginGuestName">Display Name</label>
-                            <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginGuestName" placeholder="Please enter a display name">
+                        <label style="color: #ffffff; font-size:1.5vw" for="loginGuestName">Display Name</label>
+                        <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginGuestName" placeholder="Please enter a display name">
 
-                            <div style="height:4vh;"> </div>
-                            <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginGuestButton" class="btn">Log In</button>
-                        </div>
+                        <div style="height:4vh;"> </div>
+                        <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginGuestButton" class="btn">Log In</button>
+                    </div>
 
-                        <!--Login in as student-->
-                        <div class="column" id="loginStudent">
-                                <h1 style="font-size:2.5vw">Login As Student</h1>
-                                <div style="height:3vh;"> </div>
+                    <!--Login in as student-->
+                    <div class="column" id="loginStudent">
+                        <h1 style="font-size:2.5vw">Login As Student</h1>
+                        <div style="height:3vh;"> </div>
 
-                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentEmail">Purdue Email</label>
-                                <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentEmail" placeholder="Please enter your Purdue email">
-                                <label style="color: #ffffff; font-size:1.5vw" for="loginStudentPassword">Password</label>
-                                <input class="form-control" type="password" style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentPassword" placeholder="Please enter your displayName">
+                        <label style="color: #ffffff; font-size:1.5vw" for="loginStudentEmail">Email</label>
+                        <input class="form-control"style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentEmail" placeholder="Please enter your email">
+                        <label style="color: #ffffff; font-size:1.5vw" for="loginStudentPassword">Password</label>
+                        <input class="form-control" type="password" style="border:1px solid #000000; width:18vw; height:5vh" maxlength="32" id="loginStudentPassword" placeholder="Please enter your password">
 
-                                <div style="height:4vh;"> </div>
-                                <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn" onclick="purdueAccountLogin()">Log In</button>
-                                <script>
-                                    function purdueAccountLogin() {
-                                        firebase.auth().createUserWithEmailAndPassword(document.getElementById("loginStudentEmail").value, document.getElementById("loginStudentPassword").value).catch(function(error) {
-                                            firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById("loginStudentPassword").value).catch(function(error) {
-                                                window.alert("Error, please try again");
-                                            });
-                                        });
-                                        firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById("loginStudentEmail").value);
-                                    }
-                                </script>
+                        <div style="height:4vh;"> </div>
+                        <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="loginStudentButton" class="btn" onclick="purdueAccountLogin()">Log In</button>
+                        <script>
+                            function purdueAccountLogin() {
+                                if (document.getElementById('loginStudentEmail').value.includes("purdue.edu")) {
+                                    firebase.auth().signInWithEmailAndPassword(document.getElementById('loginStudentEmail').value, document.getElementById('loginStudentPassword').value)
 
-                        </div>
+                                }
+
+                            }
+                        </script>
                     </div>
                 </div>
+            </div>
 
+            <!--Register Tab-->
+            <div id="tab3" class="tab">
+                <h1 style="font-size:2.5vw">Register An Account</h1>
+                <div style="height:3vh;"> </div>
 
+                <label style="color: #ffffff; font-size:1.5vw" for="registerStudentEmail">Email</label>
+                <input class="form-control"style="border:1px solid #000000; width:30vw; height:5vh" maxlength="32" id="registerStudentEmail" placeholder="Please enter a Purude email">
 
+                <label style="color: #ffffff; font-size:1.5vw" for="registerStudentPassword">Password</label>
+                <input class="form-control" type="password" style="border:1px solid #000000; width:30vw; height:5vh" maxlength="32" id="registerStudentPassword" placeholder="Please enter your password">
 
-                <!--Github Tab-->
-                <div id="tab4" class="tab">
-                    <p class="paragraph">This project is considered Open Source with a BSD like license.</p>
-                    <p class="paragraph">Contributors: Craig Ruble, Brett Eiffert, Vikram Pasumarti</p>
-                    <p class="paragraph">Our project can be found <a href="https://github.com/Ruble46/boilerAssist" style="color:white" target="_blank">here</a>.</p>
-                </div>
-            </div> <!--end of tab-content-->
-        </div> <!--end of tabs-->
-    </div> <!--end of buttonRow-->
+                <div style="height:4vh;"> </div>
+                <button type="button" class="buttonCustom" style="background-color:black; color:white; width:8vw; height:2.5vw; font-size:1vw" id="registerStudentButton" class="btn" onclick="purdueAccountSignUp()">Register</button>
+                <script>
+                    function purdueAccountSignUp() {
+                        if (document.getElementById('registerStudentEmail').value.includes("purdue.edu")) {
+                            firebase.auth().createUserWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
+                            //firebase.auth().signInWithEmailAndPassword(document.getElementById('registerStudentEmail').value, document.getElementById('registerStudentPassword').value);
+                        }
+
+                    }
+                </script>
+
+            </div>
+
+            <!--Github Tab-->
+            <div id="tab4" class="tab">
+                <p class="paragraph">This project is considered Open Source with a BSD like license.</p>
+                <p class="paragraph">Contributors: Craig Ruble, Brett Eiffert, Vikram Pasumarti</p>
+                <p class="paragraph">Our project can be found <a href="https://github.com/Ruble46/boilerAssist" style="color:white" target="_blank">here</a>.</p>
+            </div>
+        </div> <!--end of tab-content-->
+    </div> <!--end of tabs-->
+</div> <!--end of buttonRow-->
 </body>
