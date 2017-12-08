@@ -55,11 +55,18 @@
                 <div class="tab-content">
                     <!--Chat tab-->
                     <div id="tab1" class="tab active">
-                        <div disabled class="chatBox" id="chatBox_pharmacy"></div>
+                        <div disabled class="chatBox" id="chatBox_pharmacy">Click the button below to join the global chat!</div>
                         
                    <form name="message" action="">
                        <input type="text" id="messageBox_pharmacy" maxlength="1000">
-                       <button type="button" class="btn" id="sendButton_pharmacy">Send</button>
+                       <button type="button" class="btn" id="sendButton_pharmacy" onclick="joinChatPharm()">Join</button>
+                       <script>
+                           function joinChatPharm() {
+                               var curruser = localStorage.LOGGEDINDISPLAY;
+                               var url = "http://purdueboilerassistchat.herokuapp.com?" + curruser;
+                               window.open(url);
+                           }
+                       </script>
                     </div>
                     
                     <!--Login Tab-->
